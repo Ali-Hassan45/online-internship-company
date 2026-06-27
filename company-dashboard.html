@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Panel | AH Nexues Lab</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span>AH</span>
+    <div>
+      <strong>AH Nexues Lab</strong>
+      <small>Internship Portal</small>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="about.html">About</a>
+    <a class="auth-link" href="dashboard.html" style="display:none;">Dashboard</a>
+    <a class="student-link" href="saved.html" style="display:none;">Saved</a>
+    <a class="student-link" href="my-applications.html" style="display:none;">Applications</a>
+    <a class="company-link" href="company-dashboard.html" style="display:none;">Company Panel</a>
+    <a class="auth-link" href="notifications.html" style="display:none;">Notifications</a>
+    <a class="guest-link" href="login.html">Login</a>
+    <a class="guest-link primary-link" href="register.html">Register</a>
+    <button class="nav-btn danger auth-link" onclick="logout()" style="display:none;">Logout</button>
+  </nav>
+</header>
+<main class="container">
+
+<div class="section-title reveal"><span class="pill">AH Nexues Lab Company Panel</span><h2>Post Internships & Manage Student Applications</h2><p>Create internship posts, review applications in queue order, schedule interviews and update student progress.</p></div>
+<section class="grid-2 reveal delay-1">
+  <form class="panel" id="postInternshipForm">
+    <h3>Create New Internship Post</h3>
+    <div class="form-grid">
+      <div class="input-group"><label>Internship Title</label><input id="title" placeholder="Frontend Developer Intern"></div>
+      <div class="input-group"><label>Category</label><select id="category"><option>Web Development</option><option>Backend Development</option><option>Design</option><option>Marketing</option><option>Data Science</option></select></div>
+      <div class="input-group"><label>Work Mode</label><select id="mode"><option>Remote</option><option>Onsite</option><option>Hybrid</option></select></div>
+      <div class="input-group"><label>Location</label><input id="location" placeholder="Lahore / Remote"></div>
+      <div class="input-group"><label>Duration</label><input id="duration" placeholder="3 Months"></div>
+      <div class="input-group"><label>Stipend</label><input type="number" id="stipend" placeholder="25000"></div>
+      <div class="input-group"><label>Deadline</label><input type="date" id="deadline"></div>
+      <div class="input-group"><label>Required Skills</label><input id="skills" placeholder="HTML, CSS, JavaScript"></div>
+      <div class="input-group full"><label>Internship Description</label><textarea id="description" placeholder="Write role responsibilities, learning outcomes and selection criteria."></textarea></div>
+    </div>
+    <button type="submit">Publish Internship</button>
+  </form>
+  <div class="panel"><h3>Published Internships</h3><div id="postedInternships"></div></div>
+</section>
+<div class="section-title reveal" id="applications"><span class="pill">Application Queue</span><h2>Received Student Applications</h2><p>Applications are shown with Queue concept: first applied, first reviewed.</p></div>
+<div class="reveal delay-2" id="receivedApplications"></div>
+
+</main>
+<footer class="footer">
+  <p>© 2026 AH Nexues Lab Internship Portal | Learn. Apply. Grow. Get selected.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Quiz | AH Nexues Lab</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span>AH</span>
+    <div>
+      <strong>AH Nexues Lab</strong>
+      <small>Internship Portal</small>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="about.html">About</a>
+    <a class="auth-link" href="dashboard.html" style="display:none;">Dashboard</a>
+    <a class="student-link" href="saved.html" style="display:none;">Saved</a>
+    <a class="student-link" href="my-applications.html" style="display:none;">Applications</a>
+    <a class="company-link" href="company-dashboard.html" style="display:none;">Company Panel</a>
+    <a class="auth-link" href="notifications.html" style="display:none;">Notifications</a>
+    <a class="guest-link" href="login.html">Login</a>
+    <a class="guest-link primary-link" href="register.html">Register</a>
+    <button class="nav-btn danger auth-link" onclick="logout()" style="display:none;">Logout</button>
+  </nav>
+</header>
+<main class="container">
+
+<div class="section-title reveal"><span class="pill">Skill Quiz</span><h2>Internship Readiness Assessment</h2><p>Check your frontend and programming fundamentals before applying to AH Nexues Lab internships.</p></div>
+<form class="panel reveal delay-1" id="quizForm">
+  <p>1. HTML is mainly used for?</p><label><input type="radio" name="q1" value="1"> Page structure</label><label><input type="radio" name="q1" value="0"> Database storage</label>
+  <p>2. CSS is mainly used for?</p><label><input type="radio" name="q2" value="1"> Styling and layout</label><label><input type="radio" name="q2" value="0"> Server hosting</label>
+  <p>3. JavaScript can handle?</p><label><input type="radio" name="q3" value="1"> Events and frontend logic</label><label><input type="radio" name="q3" value="0"> Only image editing</label>
+  <p>4. localStorage is?</p><label><input type="radio" name="q4" value="1"> Browser-based storage</label><label><input type="radio" name="q4" value="0"> A CSS animation</label>
+  <p>5. Queue follows which rule?</p><label><input type="radio" name="q5" value="1"> FIFO</label><label><input type="radio" name="q5" value="0"> LIFO</label>
+  <div class="actions"><button type="submit">Submit Skill Quiz</button></div>
+</form>
+<div class="reveal delay-2" id="quizResult" style="margin-top:18px"></div>
+
+</main>
+<footer class="footer">
+  <p>© 2026 AH Nexues Lab Internship Portal | Learn. Apply. Grow. Get selected.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

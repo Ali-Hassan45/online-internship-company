@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | AH Nexues Lab</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span>AH</span>
+    <div>
+      <strong>AH Nexues Lab</strong>
+      <small>Internship Portal</small>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="about.html">About</a>
+    <a class="auth-link" href="dashboard.html" style="display:none;">Dashboard</a>
+    <a class="student-link" href="saved.html" style="display:none;">Saved</a>
+    <a class="student-link" href="my-applications.html" style="display:none;">Applications</a>
+    <a class="company-link" href="company-dashboard.html" style="display:none;">Company Panel</a>
+    <a class="auth-link" href="notifications.html" style="display:none;">Notifications</a>
+    <a class="guest-link" href="login.html">Login</a>
+    <a class="guest-link primary-link" href="register.html">Register</a>
+    <button class="nav-btn danger auth-link" onclick="logout()" style="display:none;">Logout</button>
+  </nav>
+</header>
+<main class="container">
+
+<section class="auth-wrap">
+  <form class="auth-card reveal" id="registerForm" novalidate>
+    <span class="pill">Join AH Nexues Lab</span>
+    <h2>Create Your Internship Portal Account</h2>
+    <p>Register as a student to apply for internships or as a company user to manage internship opportunities.</p>
+
+    <div class="form-grid">
+      <div class="input-group"><label>Full Name</label><input id="full_name" placeholder="Enter your full name"><small class="hint">Only letters and spaces. 3-80 characters.</small><small class="error" id="fullNameError"></small></div>
+      <div class="input-group"><label>Email Address</label><input id="email" type="email" placeholder="example@gmail.com"><small class="hint">Must contain @ and a valid domain.</small><small class="error" id="emailError"></small></div>
+      <div class="input-group"><label>Phone Number</label><input id="phone" placeholder="03XXXXXXXXX"><small class="hint">Pakistani format: 03XXXXXXXXX.</small><small class="error" id="phoneError"></small></div>
+      <div class="input-group"><label>Username</label><input id="username" placeholder="your_username"><small class="hint">Letters, numbers and underscore only.</small><small class="error" id="usernameError"></small></div>
+      <div class="input-group"><label>Date of Birth</label><input id="dob" type="date"><small class="hint">Minimum age 13 years.</small><small class="error" id="dobError"></small></div>
+      <div class="input-group"><label>Account Type</label><select id="role"><option value="">Select role</option><option value="student">Student</option><option value="company">Company</option></select><small class="hint">Student applies; company posts internships.</small><small class="error" id="roleError"></small></div>
+      <div class="input-group"><label>Password</label><input id="password" type="password" placeholder="Create strong password"><small class="hint">10+ chars, uppercase, lowercase, number and special character.</small><small class="error" id="passwordError"></small></div>
+      <div class="input-group"><label>Confirm Password</label><input id="confirm_password" type="password" placeholder="Confirm password"><small class="hint">Must match your password.</small><small class="error" id="confirmPasswordError"></small></div>
+    </div>
+
+    <button type="submit">Register Now</button>
+    <p style="margin-top:16px;text-align:center">Already have an account? <a style="color:var(--primary);font-weight:900" href="login.html">Login here</a></p>
+  </form>
+</section>
+
+</main>
+<footer class="footer">
+  <p>© 2026 AH Nexues Lab Internship Portal | Learn. Apply. Grow. Get selected.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

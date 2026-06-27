@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AH Nexues Lab | Online Internship Portal</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span>AH</span>
+    <div>
+      <strong>AH Nexues Lab</strong>
+      <small>Internship Portal</small>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="about.html">About</a>
+    <a class="auth-link" href="dashboard.html" style="display:none;">Dashboard</a>
+    <a class="student-link" href="saved.html" style="display:none;">Saved</a>
+    <a class="student-link" href="my-applications.html" style="display:none;">Applications</a>
+    <a class="company-link" href="company-dashboard.html" style="display:none;">Company Panel</a>
+    <a class="auth-link" href="notifications.html" style="display:none;">Notifications</a>
+    <a class="guest-link" href="login.html">Login</a>
+    <a class="guest-link primary-link" href="register.html">Register</a>
+    <button class="nav-btn danger auth-link" onclick="logout()" style="display:none;">Logout</button>
+  </nav>
+</header>
+<main class="container">
+
+<section class="hero">
+  <div class="reveal">
+    <span class="pill">AH Nexues Lab Career Launchpad</span>
+    <h1>Online Internship Portal Built for Future Tech Talent</h1>
+    <p>
+      AH Nexues Lab connects students with practical internship opportunities in web development,
+      backend engineering, design, data and digital marketing. Students can apply, track progress,
+      build resumes, take skill quizzes and receive interview updates from one professional portal.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="register.html">Start Your Internship Journey</a>
+      <a class="btn btn-ghost" href="internships.html">Explore Open Roles</a>
+      <a class="btn btn-ghost" href="admin-analytics.html">View Portal Analytics</a>
+    </div>
+  </div>
+
+  <div class="card hero-card reveal delay-1">
+    <span class="pill">Portal Highlights</span>
+    <div class="module-list">
+      <div><strong>Smart Internship Discovery</strong><p>Students search, filter, compare and save internships offered through AH Nexues Lab.</p></div>
+      <div><strong>Application Tracking</strong><p>Every application moves through Pending, Shortlisted, Accepted or Rejected status.</p></div>
+      <div><strong>Interview Scheduling</strong><p>Companies can add interview dates and feedback for applicants.</p></div>
+      <div><strong>Skill Growth Tools</strong><p>Resume builder, skill quiz, certificate page and notifications improve the student journey.</p></div>
+      <div><strong>Academic Concepts</strong><p>OOP classes, PF logic, DSA queue/stack/search/sort and localStorage database concept.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats reveal delay-2">
+  <div class="card stat"><strong id="totalUsers">0</strong><span>Registered Users</span></div>
+  <div class="card stat"><strong id="totalCompanies">0</strong><span>Company Accounts</span></div>
+  <div class="card stat"><strong id="totalInternships">0</strong><span>Internship Posts</span></div>
+  <div class="card stat"><strong id="totalApplications">0</strong><span>Student Applications</span></div>
+</section>
+
+<div class="section-title reveal">
+  <span class="pill">Complete Frontend System</span>
+  <h2>Designed Like a Real Internship Platform</h2>
+  <p>Each module has a clear purpose so the project looks detailed, professional and submission-ready.</p>
+</div>
+
+<section class="grid-4 reveal delay-1">
+  <div class="panel"><h3>Student Portal</h3><p>Create account, edit profile, save internships, apply with cover letter and monitor application status.</p></div>
+  <div class="panel"><h3>Company Portal</h3><p>AH Nexues Lab can publish internship posts, review applicants, schedule interviews and update status.</p></div>
+  <div class="panel"><h3>Learning Tools</h3><p>Resume builder, skill quiz, interview page, certificate page and notification center are included.</p></div>
+  <div class="panel"><h3>Project Concepts</h3><p>OOP, PF, DSA and database concepts are visible inside the JavaScript code and page flow.</p></div>
+</section>
+
+</main>
+<footer class="footer">
+  <p>© 2026 AH Nexues Lab Internship Portal | Learn. Apply. Grow. Get selected.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

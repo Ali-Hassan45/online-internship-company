@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | AH Nexues Lab</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span>AH</span>
+    <div>
+      <strong>AH Nexues Lab</strong>
+      <small>Internship Portal</small>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="internships.html">Internships</a>
+    <a href="about.html">About</a>
+    <a class="auth-link" href="dashboard.html" style="display:none;">Dashboard</a>
+    <a class="student-link" href="saved.html" style="display:none;">Saved</a>
+    <a class="student-link" href="my-applications.html" style="display:none;">Applications</a>
+    <a class="company-link" href="company-dashboard.html" style="display:none;">Company Panel</a>
+    <a class="auth-link" href="notifications.html" style="display:none;">Notifications</a>
+    <a class="guest-link" href="login.html">Login</a>
+    <a class="guest-link primary-link" href="register.html">Register</a>
+    <button class="nav-btn danger auth-link" onclick="logout()" style="display:none;">Logout</button>
+  </nav>
+</header>
+<main class="container">
+
+<div id="dashboardWrap"></div>
+<div class="section-title reveal">
+  <span class="pill">Technical Concepts</span>
+  <!-- <h2>OOP + PF + DSA + Frontend Database</h2>
+  <p>This dashboard is powered by JavaScript classes, arrays, loops, functions, queue/stack and localStorage.</p> -->
+</div>
+<section class="grid-3 reveal delay-1">
+  <div class="panel"><h3>OOP</h3><p>Student, Company, Internship, Application, Validator and DB classes structure the frontend code.</p></div>
+  <div class="panel"><h3>DSA</h3><p>Stack displays recent activities, Queue processes applications and sorting arranges internship cards.</p></div>
+  <div class="panel"><h3>Database Concept</h3><p>localStorage stores users, internships, applications, notifications and quiz records.</p></div>
+</section>
+
+</main>
+<footer class="footer">
+  <p>© 2026 AH Nexues Lab Internship Portal | Learn. Apply. Grow. Get selected.</p>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
