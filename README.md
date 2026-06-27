@@ -1,6 +1,18 @@
 # AH Nexues Lab Internship Portal - Complete Frontend + Backend
 
-This project includes your frontend pages plus a PHP + MySQL backend.
+## Note
+
+This is a full-stack project built with PHP and MySQL.
+
+GitHub Pages does not support PHP or MySQL, so this project cannot run directly on GitHub Pages.
+
+To run this project:
+
+1. Install XAMPP.
+2. Start Apache and MySQL.
+3. Import `database.sql`.
+4. Open `setup.php`.
+5. Visit `http://localhost/...`.
 
 ## What is included
 
